@@ -1,5 +1,5 @@
+import { Button } from '@mostafanadi/testing-package-for-npm'
 import React from 'react'
-import {Button} from './../dist/index'
 
 type Props = {}
 
