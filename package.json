@@ -1,10 +1,13 @@
 {
-  "name": "ui-kit-test",
+  "name": "@mostafanadi/testing-package-for-npm",
   "version": "1.0.0",
   "description": "Testing library for publishing on npm",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/mostafanadi"
+  },
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsEsm"
   },
