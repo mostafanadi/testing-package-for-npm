@@ -4,6 +4,8 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import packageJson from './package.json' assert { type: "json" };
 import postcss from "rollup-plugin-postcss";
+import css from "rollup-plugin-import-css";
+
 
 export default [
   {
@@ -25,6 +27,7 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(), 
+      css()
     ],
   },
   {
